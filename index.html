@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Yağmuru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="panel">
+        <h2>Matrix Kontrol Paneli</h2>
+
+        <label>
+            Karakter Rengi
+            <input type="color" id="renkSecici" value="#00ff00">
+        </label>
+
+        <label>
+            Düşme Hızı
+            <input type="range" id="hizKontrolu" min="1" max="50" value="10">
+        </label>
+    </aside>
+
+    <canvas id="matrixCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

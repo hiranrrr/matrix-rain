@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(2, 2, 2);
+    font-family: monospace;
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background: rgba(11, 11, 11, 0.7);
+    color: #f9fbfb;
+    padding: 20px;
+    z-index: 10;
+}
+
+.panel h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.panel label {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.panel input {
+    width: 100%;
+    margin-top: 5px;
+}
+
+canvas {
+    display: block;
+}
+
+:root {
+    --matrix-renk: #00ff00;
+}
+
+
+#renkSecici,
+#hizKontrolu {
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+
+#renkSecici:hover,
+#renkSecici:focus,
+#hizKontrolu:hover,
+#hizKontrolu:focus {
+    border-color: var(--matrix-renk);
+    box-shadow:
+        0 0 6px var(--matrix-renk),
+        0 0 16px var(--matrix-renk),
+        0 0 32px var(--matrix-renk);
+    outline: none;
+}
+
+#hizKontrolu {
+    accent-color: var(--matrix-renk);
+}
